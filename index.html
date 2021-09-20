@@ -5,27 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cash-Register</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container"></div>
+    <div class="container">
     <h1>Cash Register</h1>
-    <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
+    <p class="description">Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
     <label for="bill">Bill:</label>
     <input id="bill" type=text value=""></input>
     <label for="cash-given">Cash Given:</label>
     <input id="cash-given" type=text value=""></input>
-    <button>Check</button>
-    <p class="error-message"></p>
-    <table>
+    <button class="btn-check">Check</button>
+    <p id="error-message"></p>
+    <table class="notes-table">
         <tr>
+            <tbody>
             <th>No. of Notes</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
+            <td class="no-of-notes"></td>
         </tr>
         <tr>
             <th>Note</th>
@@ -37,8 +39,10 @@
             <td>5</td>
             <td>1</td>
         </tr>
-    </table>
 
+    </tbody>
+    </table>
+    </div>
 </body>
 </html>
 
