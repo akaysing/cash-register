@@ -15,6 +15,7 @@
 
 h1 {
     color: rgba(255, 154, 21, 0.993);
+    margin: auto;
 }
 
 .description {
@@ -27,6 +28,7 @@ h1 {
     border-collapse: collapse;
     border: 1px solid rgba(255, 154, 21, 0.993);
     width: 50%;
+    margin-top: 1rem;
 }
 
 label  {
@@ -45,8 +47,10 @@ input {
 
 #error-message {
     font-size: larger;
-    margin: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     width: 100%;
+    text-align: center;
 }
 
 .btn-check {
