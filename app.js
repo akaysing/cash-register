@@ -5,10 +5,9 @@ const checkButton = document.querySelector(".btn-check");
 const message = document.querySelector("#error-message");
 const notes = document.querySelectorAll(".no-of-notes");
 const availableNotes = [2000, 500, 100, 20, 10, 5, 1];
-checkButton.addEventListener("click", function amountValidation() {
-  hideMessage();
 
-  console.log(typeof billAmt.value);
+checkButton.addEventListener("click", () => {
+  hideMessage();
   if (Number(billAmt.value) > 0) {
     if (Number(billAmt.value) <= Number(cashAmt.value)) {
       const change = cashAmt.value - billAmt.value;
@@ -21,7 +20,7 @@ checkButton.addEventListener("click", function amountValidation() {
   }
 });
 
-function calculateChange(change) {
+const calculateChange = (change) => {
   for (let i = 0; i < availableNotes.length; i++) {
     const numberOfNotes = Math.trunc(change / availableNotes[i]);
 
@@ -30,11 +29,9 @@ function calculateChange(change) {
   }
 }
 
-function hideMessage() {
-  message.style.display = "none";
-}
+const hideMessage = () => message.style.display = "none";
 
-function showMessage(msg) {
+const showMessage = (msg) => {
   message.style.display = "block";
   message.innerText = msg;
 }
